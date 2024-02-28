@@ -1,0 +1,23 @@
+package:
+  name: libtorch-cxx11
+  version: 2.2.1
+
+source:
+  url: https://download.pytorch.org/libtorch/cu121/libtorch-cxx11-abi-shared-with-deps-2.2.1%2Bcu121.zip
+  sha256: 346719fbd23846440069cd61f9af19cd28b60a136338c9a3495c5b76feffca12
+
+build:
+  number: 0
+  script: |
+    cp -R ${SRC_DIR}/* $PREFIX
+
+about:
+  homepage: https://pytorch.org/get-started/locally/
+  license_url: https://github.com/pytorch/pytorch/blob/6c8c5ad5eaf47a62fafbb4a2747198cbffbf1ff0/LICENSE
+  summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+  description: Tensors and Dynamic neural networks in Python with strong GPU acceleration.
+  repository: https://github.com/pytorch/pytorch
+
+extra:
+  recipe-maintainers:
+    - zicklag
